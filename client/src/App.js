@@ -151,6 +151,8 @@ function App() {
   const [movies, setMovies] = useState([]);
   const [selectedMovie, setSelectedMovie] = useState(null);
   const [showModal, setShowModal] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('');
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -179,9 +181,13 @@ function App() {
     navigate(`/book/${movie.id}`);
   };
   const handleWatchTrailer = (movie) => {
-    // Dummy trailer link, replace with real one if available
     window.open('https://www.youtube.com/results?search_query=' + encodeURIComponent(movie.title + ' trailer'), '_blank');
   };
+
+  // Filter movies by search term
+  const filteredMovies = searchTerm
+    ? movies.filter(m => m.title.toLowerCase().includes(searchTerm.toLowerCase()))
+    : movies;
 
   return (
     <div className="App">
@@ -195,9 +201,20 @@ function App() {
           <a href="#releases">Releases</a>
         </nav>
         <div className="nav-actions">
-          <button className="search-btn">🔍</button>
+          <button className="search-btn" onClick={() => setSearchOpen(v => !v)}>🔍</button>
           <button className="login-btn">Login</button>
         </div>
+        {searchOpen && (
+          <input
+            className="search-input"
+            type="text"
+            placeholder="Search movies..."
+            value={searchTerm}
+            onChange={e => setSearchTerm(e.target.value)}
+            autoFocus
+            style={{marginLeft: '1rem', borderRadius: '1rem', padding: '0.5rem 1rem', fontSize: '1rem', border: 'none'}}
+          />
+        )}
       </header>
 
       <Routes>
@@ -219,17 +236,17 @@ function App() {
                 </div>
               </section>
             )}
-            {/* Now Showing Section (show only first 6 movies) */}
+            {/* Now Showing Section (show only first 6 movies, filtered) */}
             <section className="now-showing">
               <h2>Now Showing</h2>
-              <MovieGrid movies={movies.slice(0, 6)} onMovieClick={handleMovieClick} onBuyClick={handleBuyClick} />
+              <MovieGrid movies={filteredMovies.slice(0, 6)} onMovieClick={handleMovieClick} onBuyClick={handleBuyClick} />
             </section>
           </>
         } />
         <Route path="/movies" element={
           <section className="now-showing">
             <h2>All Movies</h2>
-            <MovieGrid movies={movies} onMovieClick={handleMovieClick} onBuyClick={handleBuyClick} />
+            <MovieGrid movies={filteredMovies} onMovieClick={handleMovieClick} onBuyClick={handleBuyClick} />
           </section>
         } />
         <Route path="/book/:movieId" element={<SeatSelection movies={movies} />} />
