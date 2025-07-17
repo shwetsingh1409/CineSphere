@@ -58,6 +58,226 @@ const fallbackMovies = [
     poster: 'https://m.media-amazon.com/images/I/81p+xe8cbnL._AC_SY679_.jpg',
     bg: 'https://wallpapercave.com/wp/wp2634222.jpg',
   },
+  {
+    id: 6,
+    title: 'Inception',
+    year: 2010,
+    genres: ['Action', 'Sci-Fi', 'Thriller'],
+    duration: '2h 28m',
+    rating: 8.8,
+    description: 'A thief who steals corporate secrets through dream-sharing technology is given the inverse task of planting an idea.',
+    poster: 'https://image.tmdb.org/t/p/w500/edv5CZvWj09upOsy2Y6IwDhK8bt.jpg',
+    bg: 'https://wallpapercave.com/wp/wp2634222.jpg',
+  },
+  {
+    id: 7,
+    title: 'Black Panther',
+    year: 2018,
+    genres: ['Action', 'Adventure', 'Sci-Fi'],
+    duration: '2h 14m',
+    rating: 7.3,
+    description: 'T’Challa, heir to the hidden but advanced kingdom of Wakanda, must step forward to lead his people.',
+    poster: 'https://image.tmdb.org/t/p/w500/uxzzxijgPIY7slzFvMotPv8wjKA.jpg',
+    bg: 'https://wallpapercave.com/wp/wp2634222.jpg',
+  },
+  {
+    id: 8,
+    title: 'Interstellar',
+    year: 2014,
+    genres: ['Adventure', 'Drama', 'Sci-Fi'],
+    duration: '2h 49m',
+    rating: 8.6,
+    description: 'A team of explorers travel through a wormhole in space in an attempt to ensure humanity’s survival.',
+    poster: 'https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg',
+    bg: 'https://wallpapercave.com/wp/wp2634222.jpg',
+  },
+  {
+    id: 9,
+    title: 'Avengers: Endgame',
+    year: 2019,
+    genres: ['Action', 'Adventure', 'Drama'],
+    duration: '3h 1m',
+    rating: 8.4,
+    description: 'After the devastating events of Infinity War, the Avengers assemble once more to reverse Thanos’ actions.',
+    poster: 'https://image.tmdb.org/t/p/w500/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg',
+    bg: 'https://wallpapercave.com/wp/wp2634222.jpg',
+  },
+  {
+    id: 10,
+    title: 'Joker',
+    year: 2019,
+    genres: ['Crime', 'Drama', 'Thriller'],
+    duration: '2h 2m',
+    rating: 8.5,
+    description: 'In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society.',
+    poster: 'https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg',
+    bg: 'https://wallpapercave.com/wp/wp2634222.jpg',
+  },
+  {
+    id: 11,
+    title: 'The Dark Knight',
+    year: 2008,
+    genres: ['Action', 'Crime', 'Drama'],
+    duration: '2h 32m',
+    rating: 9.0,
+    description: 'When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.',
+    poster: 'https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg',
+    bg: 'https://wallpapercave.com/wp/wp2634222.jpg',
+  },
+  {
+    id: 12,
+    title: 'Spider-Man: No Way Home',
+    year: 2021,
+    genres: ['Action', 'Adventure', 'Fantasy'],
+    duration: '2h 28m',
+    rating: 8.2,
+    description: 'Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero.',
+    poster: 'https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg',
+    bg: 'https://wallpapercave.com/wp/wp2634222.jpg',
+  },
+  {
+    id: 13,
+    title: 'The Shawshank Redemption',
+    year: 1994,
+    genres: ['Drama'],
+    duration: '2h 22m',
+    rating: 9.3,
+    description: 'Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.',
+    poster: 'https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg',
+    bg: 'https://wallpapercave.com/wp/wp2634222.jpg',
+  },
+  {
+    id: 14,
+    title: 'Fight Club',
+    year: 1999,
+    genres: ['Drama'],
+    duration: '2h 19m',
+    rating: 8.8,
+    description: 'An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.',
+    poster: 'https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg',
+    bg: 'https://wallpapercave.com/wp/wp2634222.jpg',
+  },
+  {
+    id: 15,
+    title: 'Pulp Fiction',
+    year: 1994,
+    genres: ['Crime', 'Drama'],
+    duration: '2h 34m',
+    rating: 8.9,
+    description: 'The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.',
+    poster: 'https://image.tmdb.org/t/p/w500/fIE3lAGcZDV1G6XM5KmuWnNsPp1.jpg',
+    bg: 'https://wallpapercave.com/wp/wp2634222.jpg',
+  },
+  {
+    id: 16,
+    title: 'The Matrix',
+    year: 1999,
+    genres: ['Action', 'Sci-Fi'],
+    duration: '2h 16m',
+    rating: 8.7,
+    description: 'A computer programmer discovers that reality as he knows it is a simulation created by machines, and joins a rebellion to break free.',
+    poster: 'https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg',
+    bg: 'https://wallpapercave.com/wp/wp2634222.jpg',
+  },
+  {
+    id: 17,
+    title: 'Forrest Gump',
+    year: 1994,
+    genres: ['Drama', 'Romance'],
+    duration: '2h 22m',
+    rating: 8.8,
+    description: 'The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an IQ of 75.',
+    poster: 'https://image.tmdb.org/t/p/w500/saHP97rTPS5eLmrLQEcANmKrsFl.jpg',
+    bg: 'https://wallpapercave.com/wp/wp2634222.jpg',
+  },
+  {
+    id: 18,
+    title: 'The Godfather',
+    year: 1972,
+    genres: ['Crime', 'Drama'],
+    duration: '2h 55m',
+    rating: 9.2,
+    description: 'The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.',
+    poster: 'https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg',
+    bg: 'https://wallpapercave.com/wp/wp2634222.jpg',
+  },
+  {
+    id: 19,
+    title: 'Titanic',
+    year: 1997,
+    genres: ['Drama', 'Romance'],
+    duration: '3h 14m',
+    rating: 7.9,
+    description: 'A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.',
+    poster: 'https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg',
+    bg: 'https://wallpapercave.com/wp/wp2634222.jpg',
+  },
+  {
+    id: 20,
+    title: 'The Lion King',
+    year: 1994,
+    genres: ['Animation', 'Adventure', 'Drama'],
+    duration: '1h 28m',
+    rating: 8.5,
+    description: 'Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself.',
+    poster: 'https://image.tmdb.org/t/p/w500/bKPtXn9n4M4s8vvZrbw40mYsefB.jpg',
+    bg: 'https://wallpapercave.com/wp/wp2634222.jpg',
+  },
+  {
+    id: 21,
+    title: 'Jurassic Park',
+    year: 1993,
+    genres: ['Action', 'Adventure', 'Sci-Fi'],
+    duration: '2h 7m',
+    rating: 8.5,
+    description: 'A pragmatic paleontologist touring an almost complete theme park on an island in Central America is tasked with protecting a couple of kids after a power failure causes the park\'s cloned dinosaurs to run loose.',
+    poster: 'https://image.tmdb.org/t/p/w500/oU7Oq2kFAAlGqbU4VoAE36g4hoI.jpg',
+    bg: 'https://wallpapercave.com/wp/wp2634222.jpg',
+  },
+  {
+    id: 22,
+    title: 'The Silence of the Lambs',
+    year: 1991,
+    genres: ['Crime', 'Drama', 'Thriller'],
+    duration: '1h 58m',
+    rating: 8.6,
+    description: 'A young F.B.I. cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer.',
+    poster: 'https://image.tmdb.org/t/p/w500/rplLJ2hPcOQmkFhTqUte0MkEaO2.jpg',
+    bg: 'https://wallpapercave.com/wp/wp2634222.jpg',
+  },
+  {
+    id: 23,
+    title: 'Goodfellas',
+    year: 1990,
+    genres: ['Biography', 'Crime', 'Drama'],
+    duration: '2h 26m',
+    rating: 8.7,
+    description: 'The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito.',
+    poster: 'https://image.tmdb.org/t/p/w500/aKuFiU82s5ISJpGZp7YkIr3kCUd.jpg',
+    bg: 'https://wallpapercave.com/wp/wp2634222.jpg',
+  },
+  {
+    id: 24,
+    title: 'The Green Mile',
+    year: 1999,
+    genres: ['Crime', 'Drama', 'Fantasy'],
+    duration: '3h 9m',
+    rating: 8.6,
+    description: 'The lives of guards on Death Row are affected by one of their charges: a black man accused of child murder and rape, yet who has a mysterious gift.',
+    poster: 'https://image.tmdb.org/t/p/w500/velWPhVMQeQKcxggNEU8YmIo52R.jpg',
+    bg: 'https://wallpapercave.com/wp/wp2634222.jpg',
+  },
+  {
+    id: 25,
+    title: 'The Departed',
+    year: 2006,
+    genres: ['Crime', 'Drama', 'Thriller'],
+    duration: '2h 31m',
+    rating: 8.5,
+    description: 'An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.',
+    poster: 'https://image.tmdb.org/t/p/w500/nT97ifVT2J1yMQmeq20Qblg61T.jpg',
+    bg: 'https://wallpapercave.com/wp/wp2634222.jpg',
+  },
 ];
 
 function MovieGrid({ movies, onMovieClick, onBuyClick }) {
@@ -147,6 +367,43 @@ function SeatSelection({ movies }) {
   );
 }
 
+function SignUpPage() {
+  const [signupData, setSignupData] = useState({ name: '', email: '', password: '' });
+  const navigate = useNavigate();
+  return (
+    <div className="auth-page">
+      <div className="auth-modal">
+        <h2>Sign Up</h2>
+        <form className="auth-form" onSubmit={e => { e.preventDefault(); alert('Sign up successful!'); navigate('/signin'); }}>
+          <input type="text" placeholder="Name" value={signupData.name} onChange={e => setSignupData({ ...signupData, name: e.target.value })} required />
+          <input type="email" placeholder="Email" value={signupData.email} onChange={e => setSignupData({ ...signupData, email: e.target.value })} required />
+          <input type="password" placeholder="Password" value={signupData.password} onChange={e => setSignupData({ ...signupData, password: e.target.value })} required />
+          <button type="submit">Sign Up</button>
+        </form>
+        <div style={{marginTop:'1rem'}}>Already have an account? <Link to="/signin">Sign In</Link></div>
+      </div>
+    </div>
+  );
+}
+
+function SignInPage() {
+  const [loginData, setLoginData] = useState({ email: '', password: '' });
+  const navigate = useNavigate();
+  return (
+    <div className="auth-page">
+      <div className="auth-modal">
+        <h2>Sign In</h2>
+        <form className="auth-form" onSubmit={e => { e.preventDefault(); alert('Sign in successful!'); navigate('/'); }}>
+          <input type="email" placeholder="Email" value={loginData.email} onChange={e => setLoginData({ ...loginData, email: e.target.value })} required />
+          <input type="password" placeholder="Password" value={loginData.password} onChange={e => setLoginData({ ...loginData, password: e.target.value })} required />
+          <button type="submit">Sign In</button>
+        </form>
+        <div style={{marginTop:'1rem'}}>Don't have an account? <Link to="/signup">Sign Up</Link></div>
+      </div>
+    </div>
+  );
+}
+
 function App() {
   const [movies, setMovies] = useState([]);
   const [selectedMovie, setSelectedMovie] = useState(null);
@@ -202,7 +459,7 @@ function App() {
         </nav>
         <div className="nav-actions">
           <button className="search-btn" onClick={() => setSearchOpen(v => !v)}>🔍</button>
-          <button className="login-btn">Login</button>
+          <button className="login-btn" onClick={() => navigate('/signin')}>Login</button>
         </div>
         {searchOpen && (
           <input
@@ -250,6 +507,8 @@ function App() {
           </section>
         } />
         <Route path="/book/:movieId" element={<SeatSelection movies={movies} />} />
+        <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/signin" element={<SignInPage />} />
       </Routes>
 
       {/* Movie Modal */}
