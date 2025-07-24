@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SeatLayout = () => {
+const Favourite = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const SeatLayout = () => {
   )
 }
 
-export default SeatLayout
+export default Favourite
